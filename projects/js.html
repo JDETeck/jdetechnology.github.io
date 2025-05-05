@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JDETeck - Java Projects</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/projects.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="../images/logo.png" alt="JDETeck Logo" class="logo">
+            <h1>JDETeck</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li class="dropdown">
+                    <a href="#" class="active">Projects <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="java.html">Java</a>
+                        <a href="roblox.html">Roblox/Lua</a>
+                        <a href="js.html" class="active">JavaScript</a>
+                    </div>
+                </li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="projects-container">
+        <section class="projects-header">
+            <h2><i class="fab fa-java"></i> JavaScript Projects</h2>
+            <p>We do JavaScript tho!.</p>
+            <div class="filter-controls">
+                <input type="text" id="project-search" placeholder="Search projects..." class="search-input">
+                <select id="project-sort" class="sort-select">
+                    <option value="name-asc">Name (A-Z)</option>
+                    <option value="name-desc">Name (Z-A)</option>
+                    <option value="stars-desc">Most stars</option>
+                    <option value="updated-desc">Recents</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="projects-list" id="projects-list">
+            <div class="loading-spinner">
+                <div class="spinner"></div>
+                <p>Loading...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>JDETeck</h3>
+                <p>Expanding Java more and more.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p><i class="fas fa-envelope"></i><strong>NOT AVAILABLE</strong></p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects/java.html">Java Projects</a></li>
+                    <li><a href="projects/roblox.html">Luau Projects</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 JDETeck. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/jsprojects.js"></script>
+</body>
+</html>
